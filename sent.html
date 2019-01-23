@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>メール作成 | First come,first served.</title>
+    <title>応募確認 | First come,first served.</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="favicon_16.ico"/>
     <link rel="bookmark" href="favicon_16.ico"/>
@@ -53,9 +53,9 @@
             <li>
               <a href="#mail" class="list-group-item" data-toggle="collapse"><i class="glyphicon glyphicon-pencil"></i>メール <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <li class="collapse in pl10 pr10" id="mail">
-                  <a href="mail.html" class="list-group-item active">送信</a>
+                  <a href="mail.html" class="list-group-item">送信</a>
                   <a href="template.html" class="list-group-item">テンプレート作成</a>
-                  <a href="history.html" class="list-group-item">送信履歴</a>
+                  <a href="history.html" class="list-group-item active">送信履歴</a>
                 </li>
             </li>
             <li>
@@ -107,34 +107,27 @@
                     <h2 class="content-row-title">カテゴリ：写真</h2>
                   </div>
                   <div class="col-md-6">
-                    <h2 class="content-row-title">リスト　<span>(<b>送信を希望する方</b>を選んで下さい。)</span></h2>
+                    <h2 class="content-row-title">リスト</h2>
                     <div class="list-group" style="height:180px; overflow-y:scroll;">
                       <div class="checkbox list-group-item">
-                        <input type="checkbox" id="flat-checkbox-1">
                         <label for="flat-checkbox-1">佐藤太郎(B)</label>
                       </div>
                       <div class="checkbox list-group-item">
-                        <input type="checkbox" id="flat-checkbox-2">
-                        <label for="flat-checkbox-2">鈴木一郎(A)</label>
+                        <label for="flat-checkbox-2">鈴木一郎(A)&nbsp;<span class="badge badge-primary">応募済み</span></label>
                       </div>
                       <div class="checkbox list-group-item">
-                        <input type="checkbox" id="flat-checkbox-3">
                         <label for="flat-checkbox-3">田中三郎(B)</label>
                       </div>
                       <div class="checkbox list-group-item">
-                        <input type="checkbox" id="flat-checkbox-4">
                         <label for="flat-checkbox-4">木村二郎(A)</label>
                       </div>
                       <div class="checkbox list-group-item">
-                        <input type="checkbox" id="flat-checkbox-5">
                         <label for="flat-checkbox-5">小林十郎(A)</label>
                       </div>
                       <div class="checkbox list-group-item">
-                        <input type="checkbox" id="flat-checkbox-6">
                         <label for="flat-checkbox-6">森五郎(C)</label>
                       </div>
                       <div class="checkbox list-group-item">
-                        <input type="checkbox" id="flat-checkbox-7">
                         <label for="flat-checkbox-7">林一太郎(C)</label>
                       </div>
         
@@ -145,48 +138,14 @@
                   <div class="col-md-6">
                     <h2 class="content-row-title">送信設定</h2>
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="radio">
-                          <input type="radio" id="flat-radio-1" name="radio_send_rank">
-                          <label for="flat-radio-1">ランク順に送信</label>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <select name="selecter_basic" class="selecter_1">
-                          <option value="1">ランク Aから送信</option>
-                          <option value="2">ランク Eから送信</option>
-                        </select>
+                      <div class="col-md-12">
+                        ランク Aから送信　｜　ランク別に送信：ランクA
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="radio">
-                          <input type="radio" id="flat-radio-2" name="radio_send_rank">
-                          <label for="flat-radio-2">ランク別に送信</label>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <select name="selecter_basic" class="selecter_1">
-                          <option value="1">ランク A</option>
-                          <option value="2">ランク B</option>
-                          <option value="3">ランク C</option>
-                          <option value="4">ランク D</option>
-                          <option value="5">ランク E</option>
-                        </select>
-                      </div>
-                    </div>
-
                     <h2 class="content-row-title">時間設定</h2>
                     <div class="row">
                       <div class="col-md-12">
-                        <select name="selecter_basic" class="selecter_1">
-                          <option value="1">すぐに送信</option>
-                          <option value="2">10分毎に送信</option>
-                          <option value="1">30分毎に送信</option>
-                          <option value="2">1時間毎に送信</option>
-                          <option value="3">6時間毎に送信</option>
-                          <option value="4">24時間毎に送信</option>
-                        </select>
+                        すぐに送信
                       </div>
                     </div>
                   </div>
@@ -197,37 +156,34 @@
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <div class="panel-title">
-                      <b>メール作成</b>
+                      <b>メール</b>
                     </div>
                   </div>
 
                   <div class="panel-body">
                     <form novalidate="" role="form" class="form-horizontal">
                       <div class="form-group">
-                        <label class="col-md-2 control-label">タイトル</label>
+                        <div class="col-md-2" style="text-align:right;">
+                          <b>タイトル</b>
+                        </div>
                         <div class="col-md-10">
-                          <input type="text" id="title" class="form-control" name="title">
+                          横浜結婚式（●●家・●●家）カメラマン１名＜急募＞
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="col-md-2 control-label" for="exampleInputTemplate">定型文</label>
-                        <div class="col-md-5">
-                          <select name="selecter_basic" class="selecter_1" id="exampleInputTemplate">
-                            <option value="">（指定なし）</option>
-                            <option value="1">急募</option>
-                            <option value="2">ゆる募</option>
-                            <option value="3">重要な仕事</option>
-                          </select>
+                        <div class="col-md-2" style="text-align:right;">
+                          <b>応募上限数</b>
                         </div>
-                        <label class="col-md-4 control-label" for="inputCount">応募上限数</label>
-                        <div class="col-md-1">
-                          <input type="text" maxlength="3" class="form-control" id="inputCount" name="count">
+                        <div class="col-md-10">
+                          1 名
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="col-md-2 control-label" for="description">本文</label>
+                        <div class="col-md-2" style="text-align:right;">
+                          <b>本文</b>
+                        </div>
                         <div class="col-md-10">
-                          <textarea required="" class="form-control" rows="15" cols="30" id="description" name="description">
+                          <pre>
 [ToName]様
 
 お世話になっております。
@@ -243,13 +199,12 @@
 OK/NGのお返事をお願いいたします。
 
 [URL]
-
-                          </textarea>
+</pre>                          
                         </div>
                       </div>
                       <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
-                          <button class="btn btn-info" type="submit">送　信</button>
+                          <button class="btn btn-info" type="button" onclick="location.href='mail.html'">再　送</button>
                         </div>
                       </div>
                     </form>
