@@ -59,7 +59,7 @@
                 </li>
             </li>
             <li>
-              <a href="#list" class="list-group-item" data-toggle="collapse"><i class="glyphicon glyphicon-th-list"></i>リスト <span class="glyphicon glyphicon-chevron-right"></span></a>
+              <a href="#list" class="list-group-item" data-toggle="collapse"><i class="glyphicon glyphicon-th-list"></i>メンバー <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <li class="collapse in pl10 pr10" id="list">
                   <a href="registration.html" class="list-group-item active">登録</a>
                   <a href="delete.html" class="list-group-item">削除</a>
@@ -105,43 +105,41 @@
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <div class="panel-title">
-                      <b>新規登録</b>
+                      <b>メンバー</b>
                     </div>
                   </div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
 
-                  <div class="panel-body">
-                    <form novalidate="" role="form" class="form-horizontal">
-                      <div class="form-group">
-                        <label class="col-md-2 control-label">氏名</label>
-                        <div class="col-md-10">
-                          <input type="text" required="" placeholder="氏名" id="name" class="form-control" name="name">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-md-2 control-label">ふりがな</label>
-                        <div class="col-md-10">
-                          <input type="text" required="" placeholder="ふりがな" id="kana" class="form-control" name="kana">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-md-2 control-label">メールアドレス</label>
-                        <div class="col-md-10">
-                          <input type="email" required="" placeholder="メールアドレス" id="email" class="form-control" name="email">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="col-md-2 control-label" for="remarks">備考</label>
-                        <div class="col-md-10">
-                          <textarea required="" class="form-control" placeholder="備考" rows="10" cols="30" id="remarks" name="remarks"></textarea>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="col-md-offset-2 col-md-10">
-                          <button class="btn btn-info" type="submit">登　録</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                  
                 </div>
               </div>
             </div><!-- panel body -->

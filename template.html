@@ -59,7 +59,7 @@
                 </li>
             </li>
             <li>
-              <a href="#list" class="list-group-item" data-toggle="collapse"><i class="glyphicon glyphicon-th-list"></i>リスト <span class="glyphicon glyphicon-chevron-right"></span></a>
+              <a href="#list" class="list-group-item" data-toggle="collapse"><i class="glyphicon glyphicon-th-list"></i>メンバー <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <li class="collapse pl10 pr10" id="list">
                   <a href="registration.html" class="list-group-item">登録</a>
                   <a href="delete.html" class="list-group-item">削除</a>
@@ -111,6 +111,18 @@
 
                   <div class="panel-body">
                     <form novalidate="" role="form" class="form-horizontal">
+                      
+                      <div class="form-group">
+                        <label class="col-md-2 control-label" for="exampleInputTemplate">登録済み定型文</label>
+                        <div class="col-md-10">
+                          <select name="selecter_basic" class="selecter_1" id="exampleInputTemplate">
+                            <option value="">（指定なし）</option>
+                            <option value="1">急募</option>
+                            <option value="2">ゆる募</option>
+                            <option value="3">重要な仕事</option>
+                          </select>
+                        </div>
+                      </div>
                       <div class="form-group">
                         <label class="col-md-2 control-label">タイトル</label>
                         <div class="col-md-10">
@@ -124,7 +136,13 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <div class="col-md-offset-2 col-md-10">
+                        <div class="col-md-offset-2 col-md-1">
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox-delete">
+                            <label for="checkbox-delete">削除</label>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
                           <button class="btn btn-info" type="submit">登　録</button>
                         </div>
                       </div>
