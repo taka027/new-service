@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>新規登録 | First come,first served.</title>
+    <title>メンバー | First come,first served.</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="favicon_16.ico"/>
     <link rel="bookmark" href="favicon_16.ico"/>
@@ -35,7 +35,7 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div id="bs-content-row-navbar-collapse-5" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="account.html">会員ID：0123456</a></li>
+              <li><a href="information.html">会員ID：0123456</a></li>
               <li class="active"><a href="login.html"><i class="glyphicon glyphicon-log-out"></i> ログアウト</a></li>
             </ul>
 
@@ -59,18 +59,11 @@
                 </li>
             </li>
             <li>
-              <a href="#list" class="list-group-item" data-toggle="collapse"><i class="glyphicon glyphicon-th-list"></i>メンバー <span class="glyphicon glyphicon-chevron-right"></span></a>
+              <a href="#list" class="list-group-item" data-toggle="collapse"><i class="glyphicon glyphicon-th-list"></i>データ <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <li class="collapse in pl10 pr10" id="list">
-                  <a href="registration.html" class="list-group-item active">登録</a>
-                  <a href="delete.html" class="list-group-item">削除</a>
-                  <a href="export.html" class="list-group-item">エクスポート(CSV)</a>
-                </li>
-            </li>
-            <li>
-              <a href="#setup" class="list-group-item" data-toggle="collapse"><i class="glyphicon glyphicon-cog"></i>設定 <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <li class="collapse pl10 pr10" id="setup">
+                  <a href="registration.html" class="list-group-item active">メンバー</a>
                   <a href="category.html" class="list-group-item">カテゴリ</a>
-                  <a href="rank.html" class="list-group-item">ランク</a>
+                  <a href="assgin.html" class="list-group-item">割り当て</a>
                 </li>
             </li>
             <li>
@@ -79,14 +72,12 @@
                   <a href="password.html" class="list-group-item">パスワード変更</a>
                   <a href="notification.html" class="list-group-item">通知メールアドレス</a>
                   <a href="information.html" class="list-group-item">登録情報変更</a>
-                  <a href="account.html" class="list-group-item">契約情報確認</a>
                 </li>
             </li>
             <li>
               <a href="#pay" class="list-group-item" data-toggle="collapse"><i class="glyphicon glyphicon-credit-card"></i>決済 <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <li class="collapse pl10 pr10" id="pay">
                   <a href="payment.html" class="list-group-item">料金のお支払い</a>
-                  <a href="pay-notification.html" class="list-group-item">お支払い報告</a>
                   <a href="pay-history.html" class="list-group-item">お支払い履歴</a>
                 </li>
             </li>
@@ -106,35 +97,50 @@
                   <div class="panel-heading">
                     <div class="panel-title">
                       <b>メンバー</b>
+                      <button class="btn btn-info" type="submit">新規追加</button>
+                      <button class="btn btn-info" type="submit">CSV出力</button>
                     </div>
                   </div>
                   <table class="table">
                     <thead>
                       <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
+                        <th>氏名</th>
+                        <th>ランク</th>
+                        <th>メールアドレス</th>
+                        <th>メモ</th>
+                        <th></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>1</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>田中太郎</td>
+                        <td>A</td>
+                        <td>otto@aaa.com</td>
+                        <td>専属カメラマン</td>
+                        <td>
+                          <button class="btn btn-info" type="submit">編集</button>
+                          <button class="btn btn-info" type="submit">削除</button>
+                        </td>
                       </tr>
                       <tr>
-                        <td>2</td>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <td>鈴木二郎</td>
+                        <td>B</td>
+                        <td>thornton@bbb.com</td>
+                        <td></td>
+                        <td>
+                          <button class="btn btn-info" type="submit">編集</button>
+                          <button class="btn btn-info" type="submit">削除</button>
+                        </td>
                       </tr>
                       <tr>
-                        <td>3</td>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
+                        <td>佐藤三郎</td>
+                        <td>C</td>
+                        <td>bird@ccc.jp</td>
+                        <td></td>
+                        <td>
+                          <button class="btn btn-info" type="submit">編集</button>
+                          <button class="btn btn-info" type="submit">削除</button>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -142,6 +148,20 @@
                   
                 </div>
               </div>
+            
+              <div class="col-md-offset-4 col-md-8">
+                <ul class="pagination">
+                  <li class="active"><a href="#">PREV</a></li>
+                  <li><a href="#">1</a></li>
+                  <li class="active"><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li class="disabled"><a href="#">5</a></li>
+                  <li class="active"><a href="#">NEXT</a></li>
+                </ul>
+              </div>
+            
+             
             </div><!-- panel body -->
           </div>
         </div><!-- content -->

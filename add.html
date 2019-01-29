@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>送信履歴 | First come,first served.</title>
+    <title>メンバー割り当て | First come,first served.</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="favicon_16.ico"/>
     <link rel="bookmark" href="favicon_16.ico"/>
@@ -52,18 +52,18 @@
             <li><a href="index-dashboard.html" class="list-group-item"><i class="glyphicon glyphicon-list-alt"></i>通知 </a></li>
             <li>
               <a href="#mail" class="list-group-item" data-toggle="collapse"><i class="glyphicon glyphicon-pencil"></i>メール <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <li class="collapse in pl10 pr10" id="mail">
+                <li class="collapse pl10 pr10" id="mail">
                   <a href="mail.html" class="list-group-item">送信</a>
                   <a href="template.html" class="list-group-item">テンプレート作成</a>
-                  <a href="history.html" class="list-group-item active">送信履歴</a>
+                  <a href="history.html" class="list-group-item">送信履歴</a>
                 </li>
             </li>
             <li>
               <a href="#list" class="list-group-item" data-toggle="collapse"><i class="glyphicon glyphicon-th-list"></i>データ <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <li class="collapse pl10 pr10" id="list">
+                <li class="collapse in pl10 pr10" id="list">
                   <a href="registration.html" class="list-group-item">メンバー</a>
                   <a href="category.html" class="list-group-item">カテゴリ</a>
-                  <a href="assgin.html" class="list-group-item">割り当て</a>
+                  <a href="assgin.html" class="list-group-item active">割り当て</a>
                 </li>
             </li>
             <li>
@@ -93,70 +93,136 @@
             </div>
             <div class="panel-body">
               <div class="content-row">
-
-                <h2 class="content-row-title">カテゴリ</h2>
                 <div class="row">
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-1.jpg">
-                      <div class="caption text-center">
-                        <h3>写真</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h2 class="content-row-title">カテゴリ：写真</h2>
+                  </div>
+                  <div class="col-md-6">
+                    <h2 class="content-row-title">メンバー　<span>(<b>割り当てする方</b>を選んで下さい。)</span></h2>
+                    <div class="list-group" style="height:180px; overflow-y:scroll;">
+                      <div class="checkbox list-group-item">
+                        <input type="checkbox" id="flat-checkbox-1">
+                        <label for="flat-checkbox-1">佐藤太郎(B)</label>
+                      </div>
+                      <div class="checkbox list-group-item">
+                        <input type="checkbox" id="flat-checkbox-2">
+                        <label for="flat-checkbox-2">鈴木一郎(A)</label>
+                      </div>
+                      <div class="checkbox list-group-item">
+                        <input type="checkbox" id="flat-checkbox-3">
+                        <label for="flat-checkbox-3">田中三郎(B)</label>
+                      </div>
+                      <div class="checkbox list-group-item">
+                        <input type="checkbox" id="flat-checkbox-4">
+                        <label for="flat-checkbox-4">木村二郎(A)</label>
+                      </div>
+                      <div class="checkbox list-group-item">
+                        <input type="checkbox" id="flat-checkbox-5">
+                        <label for="flat-checkbox-5">小林十郎(A)</label>
+                      </div>
+                      <div class="checkbox list-group-item">
+                        <input type="checkbox" id="flat-checkbox-6">
+                        <label for="flat-checkbox-6">森五郎(C)</label>
+                      </div>
+                      <div class="checkbox list-group-item">
+                        <input type="checkbox" id="flat-checkbox-7">
+                        <label for="flat-checkbox-7">林一太郎(C)</label>
+                      </div>
+        
+                      
+                    </div>
+                    
+                  </div>
+                  <div class="col-md-6">
+                    <h2 class="content-row-title">割り当て設定</h2>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="radio">
+                          <input type="radio" id="flat-radio-1" name="radio_send_rank">
+                          <label for="flat-radio-1">メンバーのランクに従う</label>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="radio">
+                          <input type="radio" id="flat-radio-2" name="radio_send_rank">
+                          <label for="flat-radio-2">ランクを変更して割り当てる</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <select name="selecter_basic" class="selecter_1">
+                          <option value="1">ランク A</option>
+                          <option value="2">ランク B</option>
+                          <option value="3">ランク C</option>
+                          <option value="4">ランク D</option>
+                          <option value="5">ランク E</option>
+                        </select>
                       </div>
                     </div>
+
+                    
                   </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-2.jpg">
-                      <div class="caption text-center">
-                        <h3>ビデオ</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
-                      </div>
+                  <div class="col-md-offset-5 col-md-7">
+                    <button class="btn btn-info" type="submit">割り当て</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-row">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <b>リスト</b>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-3.jpg">
-                      <div class="caption text-center">
-                        <h3>エンドロール</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
-                      </div>
-                    </div>
+
+                  <div class="panel-body">
+
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>氏名</th>
+                        <th>ランク</th>
+                        <th>メールアドレス</th>
+                        <th>メモ</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>田中太郎</td>
+                        <td>A</td>
+                        <td>otto@aaa.com</td>
+                        <td>専属カメラマン</td>
+                        <td>
+                          <button class="btn btn-info" type="submit">割り当て解除</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>鈴木二郎</td>
+                        <td>B</td>
+                        <td>thornton@bbb.com</td>
+                        <td></td>
+                        <td>
+                          <button class="btn btn-info" type="submit">割り当て解除</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>佐藤三郎</td>
+                        <td>C</td>
+                        <td>bird@ccc.jp</td>
+                        <td></td>
+                        <td>
+                          <button class="btn btn-info" type="submit">割り当て解除</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
                   </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-4.jpg">
-                      <div class="caption text-center">
-                        <h3>カテゴリタイトル</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-4.jpg">
-                      <div class="caption text-center">
-                        <h3>カテゴリタイトル</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-4.jpg">
-                      <div class="caption text-center">
-                        <h3>カテゴリタイトル</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  
                 </div>
               </div>
             </div><!-- panel body -->

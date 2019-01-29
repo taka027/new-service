@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>送信履歴 | First come,first served.</title>
+    <title>カテゴリ | First come,first served.</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="favicon_16.ico"/>
     <link rel="bookmark" href="favicon_16.ico"/>
@@ -52,17 +52,17 @@
             <li><a href="index-dashboard.html" class="list-group-item"><i class="glyphicon glyphicon-list-alt"></i>通知 </a></li>
             <li>
               <a href="#mail" class="list-group-item" data-toggle="collapse"><i class="glyphicon glyphicon-pencil"></i>メール <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <li class="collapse in pl10 pr10" id="mail">
+                <li class="collapse pl10 pr10" id="mail">
                   <a href="mail.html" class="list-group-item">送信</a>
                   <a href="template.html" class="list-group-item">テンプレート作成</a>
-                  <a href="history.html" class="list-group-item active">送信履歴</a>
+                  <a href="history.html" class="list-group-item">送信履歴</a>
                 </li>
             </li>
             <li>
               <a href="#list" class="list-group-item" data-toggle="collapse"><i class="glyphicon glyphicon-th-list"></i>データ <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <li class="collapse pl10 pr10" id="list">
+                <li class="collapse in pl10 pr10" id="list">
                   <a href="registration.html" class="list-group-item">メンバー</a>
-                  <a href="category.html" class="list-group-item">カテゴリ</a>
+                  <a href="category.html" class="list-group-item active">カテゴリ</a>
                   <a href="assgin.html" class="list-group-item">割り当て</a>
                 </li>
             </li>
@@ -93,72 +93,71 @@
             </div>
             <div class="panel-body">
               <div class="content-row">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <b>カテゴリ</b>
+                      <button class="btn btn-info" type="submit">新規追加</button>
+                      <button class="btn btn-info" type="submit">CSV出力</button>
+                    </div>
+                  </div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>名称</th>
+                        <th>説明</th>
+                        <th>メモ</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>カメラマン</td>
+                        <td></td>
+                        <td>結婚式対応</td>
+                        <td>
+                          <button class="btn btn-info" type="submit">編集</button>
+                          <button class="btn btn-info" type="submit">削除</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>ビデオ（動画撮影）</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          <button class="btn btn-info" type="submit">編集</button>
+                          <button class="btn btn-info" type="submit">削除</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>ビデオ（一般）</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          <button class="btn btn-info" type="submit">編集</button>
+                          <button class="btn btn-info" type="submit">削除</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
 
-                <h2 class="content-row-title">カテゴリ</h2>
-                <div class="row">
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-1.jpg">
-                      <div class="caption text-center">
-                        <h3>写真</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-2.jpg">
-                      <div class="caption text-center">
-                        <h3>ビデオ</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-3.jpg">
-                      <div class="caption text-center">
-                        <h3>エンドロール</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-4.jpg">
-                      <div class="caption text-center">
-                        <h3>カテゴリタイトル</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-4.jpg">
-                      <div class="caption text-center">
-                        <h3>カテゴリタイトル</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-4.jpg">
-                      <div class="caption text-center">
-                        <h3>カテゴリタイトル</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
-                      </div>
-                    </div>
-                  </div>
                   
                 </div>
               </div>
+            
+              <div class="col-md-offset-4 col-md-8">
+                <ul class="pagination">
+                  <li class="active"><a href="#">PREV</a></li>
+                  <li><a href="#">1</a></li>
+                  <li class="active"><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li class="disabled"><a href="#">5</a></li>
+                  <li class="active"><a href="#">NEXT</a></li>
+                </ul>
+              </div>
+            
+             
             </div><!-- panel body -->
           </div>
         </div><!-- content -->

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>送信履歴 | First come,first served.</title>
+    <title>料金のお支払い | First come,first served.</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="favicon_16.ico"/>
     <link rel="bookmark" href="favicon_16.ico"/>
@@ -52,10 +52,10 @@
             <li><a href="index-dashboard.html" class="list-group-item"><i class="glyphicon glyphicon-list-alt"></i>通知 </a></li>
             <li>
               <a href="#mail" class="list-group-item" data-toggle="collapse"><i class="glyphicon glyphicon-pencil"></i>メール <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <li class="collapse in pl10 pr10" id="mail">
+                <li class="collapse pl10 pr10" id="mail">
                   <a href="mail.html" class="list-group-item">送信</a>
                   <a href="template.html" class="list-group-item">テンプレート作成</a>
-                  <a href="history.html" class="list-group-item active">送信履歴</a>
+                  <a href="history.html" class="list-group-item">送信履歴</a>
                 </li>
             </li>
             <li>
@@ -76,8 +76,8 @@
             </li>
             <li>
               <a href="#pay" class="list-group-item" data-toggle="collapse"><i class="glyphicon glyphicon-credit-card"></i>決済 <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <li class="collapse pl10 pr10" id="pay">
-                  <a href="payment.html" class="list-group-item">料金のお支払い</a>
+                <li class="collapse in pl10 pr10" id="pay">
+                  <a href="payment.html" class="list-group-item active">料金のお支払い</a>
                   <a href="pay-history.html" class="list-group-item">お支払い履歴</a>
                 </li>
             </li>
@@ -93,70 +93,51 @@
             </div>
             <div class="panel-body">
               <div class="content-row">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <b>料金のお支払い</b>
+                    </div>
+                  </div>
 
-                <h2 class="content-row-title">カテゴリ</h2>
-                <div class="row">
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-1.jpg">
-                      <div class="caption text-center">
-                        <h3>写真</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
+                  <div class="panel-body">
+                    <form novalidate="" role="form" class="form-horizontal">
+                      <div class="form-group">
+                        <div class="col-md-2" style="text-align:right;">
+                          <b>料金</b>
+                        </div>
+                        <div class="col-md-10">
+                          月額：？？？？円
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-2.jpg">
-                      <div class="caption text-center">
-                        <h3>ビデオ</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
+                      
+                      <div class="form-group">
+                        <label class="col-md-2 control-label">カード番号</label>
+                        <div class="col-md-3">
+                          <input type="text"  class="form-control" name="">
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-3.jpg">
-                      <div class="caption text-center">
-                        <h3>エンドロール</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
+                      
+                      <div class="form-group">
+                        <label class="col-md-2 control-label">有効年月</label>
+                        <div class="col-md-2">
+                          <input type="text" placeholder="MM/YY"  class="form-control" name="">
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-4.jpg">
-                      <div class="caption text-center">
-                        <h3>カテゴリタイトル</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
+                      <div class="form-group">
+                        <label class="col-md-2 control-label">CVC</label>
+                        <div class="col-md-1">
+                          <input type="text"  class="form-control" name="">
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-4.jpg">
-                      <div class="caption text-center">
-                        <h3>カテゴリタイトル</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
+                      <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                          <button class="btn btn-info" type="submit">登　録</button>
+                        </div>
+                        
                       </div>
-                    </div>
+                    </form>
                   </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                      <img class="img-rounded" src="dist/img/thumbnail-4.jpg">
-                      <div class="caption text-center">
-                        <h3>カテゴリタイトル</h3>
-                        <p>カテゴリの簡単な説明</p>
-                        <p><a href="sent.html" class="btn btn-default" role="button">送信済みメール</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  
                 </div>
               </div>
             </div><!-- panel body -->
